@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Calibri;
+    font-weight: bold;
+
+    background-color: #e5e5f7;
+    background-image: linear-gradient(#999999 1px, transparent 1px), linear-gradient(to right, #999999 1px, #e5e5f7 1px);
+    background-size: 20px 20px;
+}
+
+.cell{
+    float: left;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    /* margin: 1px; */
+    border: 0.5px solid rgb(165, 165, 165);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1520px) {
+    .cell{
+        width: 10px;
+        height: 10px;
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .cell{
+        width: 7px;
+        height: 7px;
+        font-size: 0.6em;
+    }
+}
+
+.firstInRow{
+    clear: left;
+}
+
+.green{
+    background-color: rgb(41, 41, 41);
+}
+
+.red{
+    background-color: #e5e5f7;
+}
+
+#centerContainer{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+
+    
+}
+
+#leftContainer{
+    height: 100%;
+    width: 20%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2em;
+}
+
+#rightContainer{
+    height: 100%;
+    width: 20%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2em;
+}
+
+#gameContainer{
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+#info{
+    background-color: rgba(255, 255, 255, 0.931);
+    width: 40%;
+    min-height: 400px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.5em;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+.controls{
+    width: 20%;
+    padding: 20px 0;
+    border-radius: 10px;
+    background-color: rgb(46, 46, 46);
+    border: solid 2px rgb(31, 31, 31);
+    outline: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    bottom: -100px;
+    margin: 0 30px;
+}
+
+#winner{
+    font-weight: bold;
+    font-size: 6em;
+}

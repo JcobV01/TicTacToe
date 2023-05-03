@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="TTT3Styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="info" style="display: none">
+            <p id="winner"></p>
+            <button id="exitBtn" class="controls">🢀 Wyjście</button>
+            <button id="continueBtn" class="controls">Kontynuuj 🢂</button>
+        </div>
+
+        <section id="leftContainer">
+            <p>Punkty gracza O</p>
+            <p id="pktO">0</p>
+        </section>
+
+        <section id="centerDiv">
+            <div id="gameContainer">
+                <div class="cells" id="cell1"></div>
+                <div class="cells" id="cell2"></div>
+                <div class="cells" id="cell3"></div>
+                <div class="cells firstInRow" id="cell4"></div>
+                <div class="cells" id="cell5"></div>
+                <div class="cells" id="cell6"></div>
+                <div class="cells firstInRow" id="cell7"></div>
+                <div class="cells" id="cell8"></div>
+                <div class="cells" id="cell9"></div>
+            </div>
+        </section>
+
+        <section id="rightContainer">
+            <p>Punkty gracza X</p>
+            <p id="pktX">0</p>
+        </section>
+
+        <script src="TTT3.js"></script>
+    </body>
+</html>

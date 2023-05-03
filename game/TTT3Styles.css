@@ -1,0 +1,133 @@
+body{
+    font-size: 5em;
+    font-family: Calibri;
+    color: black;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    min-width: 1430px;  
+    
+    background-color: #e5e5f7;
+    background-image: linear-gradient(#999999 1px, transparent 1px), linear-gradient(to right, #999999 1px, #e5e5f7 1px);
+    background-size: 20px 20px;
+}
+
+#centerDiv{
+    width: 33%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#leftContainer{
+    width: 33%;
+    height: 100vh;
+    float:left;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#rightContainer{
+    width: 33%;
+    height: 100vh;
+    float:left;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cells{
+    width: 150px;
+    height: 150px;
+    border: solid 4px black;
+    text-align: center;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstInRow{
+    clear: left;
+}
+
+
+#cell1, #cell2, #cell3{
+    border-top: none;
+}
+
+#cell1, #cell4, #cell7{
+    border-left: none;
+}
+
+#cell3, #cell6, #cell9{
+    border-right: none;
+}
+
+#cell7, #cell8, #cell9{
+    border-bottom: none;
+}
+
+
+#info{
+    background-color: rgba(255, 255, 255, 0.931);
+    width: 40%;
+    min-height: 400px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.5em;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+
+#leftContainer > p{
+    font-size: 0.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+#rightContainer > p{
+    font-size: 0.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+.controls{
+    width: 20%;
+    padding: 20px 0;
+    border-radius: 10px;
+    background-color: rgb(46, 46, 46);
+    border: solid 2px rgb(31, 31, 31);
+    outline: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    bottom: -100px;
+    margin: 0 30px;
+}
+
+#winner{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+

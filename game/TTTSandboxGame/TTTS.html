@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tik Tak Toe - Sandbox</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="TTTSStyles.css">
+    </head>
+    <body>
+        <div id="info" style="display: none">
+            <p id="winner"></p>
+            <button id="exitBtn" class="controls">🢀 Wyjście</button>
+            <button id="continueBtn" class="controls">Kontynuuj 🢂</button>
+        </div>
+        <div id="leftContainer">
+            <div id="points1" style="color: red">
+                <p>Punkty gracza X</p>
+                <p id="pktX">0</p>
+            </div>
+            <div id="points2">
+                <p>Punkty gracza O</p>
+                <p id="pktO">0</p>
+            </div>
+        </div>
+        <div id="centerContainer">
+            <div id="gameContainer">
+
+            </div>
+        </div>     
+        <div id="rightContainer">
+            <div id="points3">
+                <p>Punkty gracza △</p>
+                <p id="pkt△">0</p>
+            </div>
+            <div id="points4">
+                <p>Punkty gracza □</p>
+                <p id="pkt□">0</p>
+            </div>
+        </div>
+        <script src="TTTS.js"></script>
+    </body>
+</html>

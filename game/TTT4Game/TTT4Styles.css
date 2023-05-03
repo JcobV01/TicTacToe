@@ -1,0 +1,151 @@
+body{
+    font-size: 5em;
+    font-family: Calibri;
+    color: black;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    min-width: 500px;
+
+    background-color: #e5e5f7;
+    background-image: linear-gradient(#999999 1px, transparent 1px), linear-gradient(to right, #999999 1px, #e5e5f7 1px);
+    background-size: 20px 20px;
+}
+
+.cells{
+    width: 150px;
+    height: 150px;
+    border: solid 4px rgb(0, 0, 0);
+    text-align: center;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1580px) {
+    .cells{
+        width: 100px;
+        height: 100px;
+        font-size: 0.7em;
+    }
+
+    button{
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .cells{
+        width: 70px;
+        height: 70px;
+        font-size: 0.5em;
+    }
+}
+
+.firstInRow{
+    clear: left;
+}
+
+
+#cell1, #cell2, #cell3, #cell4{
+    border-top: none;
+}
+
+#cell1, #cell5, #cell9, #cell13{
+    border-left: none;
+}
+
+#cell4, #cell8, #cell12, #cell16{
+    border-right: none;
+}
+
+#cell13, #cell14, #cell15, #cell16{
+    border-bottom: none;
+}
+
+
+#info{
+    background-color: rgba(255, 255, 255, 0.931);
+    width: 40%;
+    min-height: 400px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.5em;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+#centerDiv{
+    width: 40%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(0, 0, 0);
+}
+
+#leftContainer{
+    width: 30%;
+    height: 100vh;
+    float:left;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#rightContainer{
+    width: 30%;
+    height: 100vh;
+    float:left;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#leftContainer > p{
+    font-size: 0.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+#rightContainer > p{
+    font-size: 0.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.controls{
+    width: 20%;
+    padding: 20px 0;
+    border-radius: 10px;
+    background-color: rgb(46, 46, 46);
+    border: solid 2px rgb(31, 31, 31);
+    outline: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    bottom: -100px;
+    margin: 0 30px;
+}
+
+#wynik{
+    font-weight: bold;
+    font-size: 1.5em;
+}
