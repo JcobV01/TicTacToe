@@ -1,4 +1,4 @@
-This project is a simple game based on classic game Tic Tac Toe.
+This project is a simple game based on classic Tic Tac Toe.
 There is 3 different game modes
 - 3x3 - classic mode
 - 4x4 - little bigger but still similar to classic
